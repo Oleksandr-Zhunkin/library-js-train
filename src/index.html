@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <form class="form js-form">
+          <input
+            class="input"
+            type="text"
+            name="search"
+            placeholder="Enter your query..."
+          />
+          <button type="submit" class="search-btn btn">Search</button>
+        </form>
+
+        <ul class="gallery-list js-gallery-list"></ul>
+
+        <div class="load">
+          <button
+            class="load-btn btn js-load-more visually-hidden"
+            type="button"
+          >
+            Load more
+          </button>
+          <p class="visually-hidden text-load js-text-load">
+            Loading images, please wait...
+          </p>
+        </div>
+
+        <div class="loader visually-hidden"></div>
+      </div>
+    </section>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
